@@ -1,0 +1,52 @@
+User
+Game
+
+User can sign in
+If signed in can see lobby, showing list of player waiting to start game. There is option for user to start game.
+
+Once game has two users. game starts. game end => user page
+
+game //
+
+trello board -> allows user to add item onto the html.
+
+
+//
+
+1) user, games
+2) game- board, player_turn, winner
+
+3) one player creates GAME. if game created will show up on index. Player 2 can join game. If game has 2 players => game page.
+
+i) V. click button to create game -> C. create game, direct to lobby. V. displayed updated index page.
+ii) V click button to join game. C. update game. -> V. both players to game page.
+- game page will display board, player turn.
+-when player 1 click x -> update to controller. C. update game. send data to V. for both players. repeat until winner condition met in C.
+- when win. direct both players to game result page V. display result.
+
+
+
+4) game page => game ID, board, display showing whos turn (trello),
+
+5) when win condition is met, display winner and redirect to game page.
+
+--------------------
+
+i) V. click button to create game ->
+-login/signup erb -J
+- erb user_login > /login -J
+- erb user_signup > /user/new -J
+- post '/user/new' -A (params['user'])
+- get '/login' -A (email, password)
+-index.erb -J
+-post '/' => create GAME. -A (params['user_id']) -> index
+-post '/game/new' => update game. => erb game page
+-erb games -J
+
+
+ V. displayed updated index page.
+ii) V click button to join game. C. update game. -> V. both players to game page.
+- game page will display board, player turn.
+-when player 1 click x -> update to controller. C. update game. send data to V. for both players. repeat until winner condition met in C.
+- when win. direct both players to game result page V. display result.
+

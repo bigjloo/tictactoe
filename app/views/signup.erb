@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+  <script>
+    // $(document).ready(function() {
+
+    //   $('new_user').submit(function(){
+    //     $.ajax({
+    //       type: "post",
+    //       url: "/user/new",
+    //       data: $('new_user').serialize(),
+    //       success: function(){
+    //         alert("success");
+    //         window.location.href
+    //       },
+    //       error: function(){
+
+    //       },
+    //       complete: function(){
+
+    //       }
+    //     });
+    //   });
+
+    // });
+  </script>
+ </head>
+ <body>
+  <div class='container'>
+    <form id= 'new_user' action= '/user/new' method= 'post'>
+      <input type= 'text' placeholder= 'Username...' name='user[username]'>
+      <input type= 'text' placeholder= 'Email...' name='user[email]'>
+      <input type= 'text' placeholder= 'Password...' name='user[password]'>
+      <input type= "submit" value= "Sign Up">
+    </form>
+  </div>
+ </body>
+</html>
